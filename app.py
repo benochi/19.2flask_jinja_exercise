@@ -16,6 +16,6 @@ def get_prompts():
 
 @app.route("/story")
 def story():
-    """Generate story output"""
+    """Generate story output from user input"""
     text = story.generate(request.args)
     return render_template("story.html", text=text)
