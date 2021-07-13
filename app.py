@@ -8,7 +8,7 @@ app.config['SECRET_KEY'] = 'xfd1234'
 
 debug = DebugToolbarExtension(app) 
 """home page decorator and function"""
-@app.route('/')
+@app.route("/")
 def get_prompts():
     """Get words from form for story prompts"""
     prompts = story.prompts
